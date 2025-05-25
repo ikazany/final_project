@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MTG Deck Shop</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="gradient-bg"></div>
+    
+    <!-- Навигация -->
+    <nav>
+        <a href="#" data-page="pro-decks">Профессиональные колоды</a>
+        <a href="#" data-page="beginner-decks">Колоды для новичков</a>
+        <a href="#" data-page="rules">Правила MTG</a>
+    </nav>
+    
+    <!-- Основной контент -->
+    <div class="container">
+        <!-- Страница профессиональных колод -->
+        <div id="pro-decks" class="page active">
+            <h1>Профессиональные колоды MTG</h1>
+            <p>Выберите профессиональную колоду для турниров. К каждой колоде прилагается 2 случайных бустера!</p>
+            
+            <div class="decks-grid">
+                <!-- Колода 1 -->
+                <div class="deck">
+                    <div class="deck-image">
+                        <img src="images/i.webp" alt="Ракдос Мидранж">
+                    </div>
+                    <div class="deck-content">
+                        <h3>Ракдос Мидранж</h3>
+                        <p>Агрессивная колода с упором на карты с высоким соотношением силы к стоимости.</p>
+                        <div class="deck-actions">
+                            <button class="show-deck">Показать деклист</button>
+                            <button class="order-btn">Заказать колоду</button>
+                        </div>
+                        <div class="deck-list">
+                            <h4>Основная колода (60 карт):</h4>
+                            <ul>
+                                <li>4x Thoughtseize</li>
+                                <li>4x Fatal Push</li>
+                                <li>4x Kroxa, Titan of Death's Hunger</li>
+                                <li>3x Bonecrusher Giant</li>
+                                <li>... и другие</li>
+                            </ul>
+                            <h4>Сайдборд (15 карт):</h4>
+                            <ul>
+                                <li>2x Nihil Spellbomb</li>
+                                <li>3x Duress</li>
+                                <li>2x Kolaghan's Command</li>
+                                <li>... и другие</li>
+                            </ul>
+                        </div>
+                        <div class="boosters">
+                            <h4>Ваши случайные бустеры:</h4>
+                            <div class="booster" id="booster-1"></div>
+                            <div class="booster" id="booster-2"></div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Колода 2 -->
+                <div class="deck">
+                    <div class="deck-image">
+                        <img src="images/th.jfif" alt="Азури Контроль">
+                    </div>
+                    <div class="deck-content">
+                        <h3>Азури Контроль</h3>
+                        <p>Контрольная колода, которая доминирует в поздней игре.</p>
+                        <div class="deck-actions">
+                            <button class="show-deck">Показать деклист</button>
+                            <button class="order-btn">Заказать колоду</button>
+                        </div>
+                        <div class="deck-list">
+                            <h4>Основная колода (60 карт):</h4>
+                            <ul>
+                                <li>4x Archmage's Charm</li>
+                                <li>4x Counterspell</li>
+                                <li>2x Teferi, Time Raveler</li>
+                                <li>3x Supreme Verdict</li>
+                                <li>... и другие</li>
+                            </ul>
+                            <h4>Сайдборд (15 карт):</h4>
+                            <ul>
+                                <li>2x Mystical Dispute</li>
+                                <li>3x Rest in Peace</li>
+                                <li>2x Aether Gust</li>
+                                <li>... и другие</li>
+                            </ul>
+                        </div>
+                        <div class="boosters">
+                            <h4>Ваши случайные бустеры:</h4>
+                            <div class="booster" id="booster-3"></div>
+                            <div class="booster" id="booster-4"></div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Колода 3 -->
+                <div class="deck">
+                    <div class="deck-image">
+                        <img src="images/i (1).webp" alt="Голгари Агрессия">
+                    </div>
+                    <div class="deck-content">
+                        <h3>Голгорот Агрессия</h3>
+                        <p>Быстрая агрессивная колода с упором на существ с бдительностью.</p>
+                        <div class="deck-actions">
+                            <button class="show-deck">Показать деклист</button>
+                            <button class="order-btn">Заказать колоду</button>
+                        </div>
+                        <div class="deck-list">
+                            <h4>Основная колода (60 карт):</h4>
+                            <ul>
+                                <li>4x Tarmogoyf</li>
+                                <li>4x Scavenging Ooze</li>
+                                <li>4x Dark Confidant</li>
+                                <li>4x Thoughtseize</li>
+                                <li>... и другие</li>
+                            </ul>
+                        </div>
+                        <div class="boosters">
+                            <h4>Ваши случайные бустеры:</h4>
+                            <div class="booster" id="booster-5"></div>
+                            <div class="booster" id="booster-6"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Страница колод для новичков -->
+        <div id="beginner-decks" class="page">
+            <h1>Колоды для новичков</h1>
+            <p>Отличные колоды для тех, кто только начинает играть в MTG.</p>
+            
+            <div class="decks-grid">
+                <!-- Колода 1 -->
+                <div class="deck">
+                    <div class="deck-image">
+                        <img src="images/i (2).webp" alt="Моно-зелёный Стамп">
+                    </div>
+                    <div class="deck-content">
+                        <h3>Моно-зелёный Стамп</h3>
+                        <p>Простая в освоении агрессивная колода.</p>
+                        <div class="deck-actions">
+                            <button class="show-deck">Показать деклист</button>
+                            <button class="order-btn">Заказать колоду</button>
+                        </div>
+                        <div class="deck-list">
+                            <h4>Основная колода (60 карт):</h4>
+                            <ul>
+                                <li>4x Llanowar Elves</li>
+                                <li>4x Pelt Collector</li>
+                                <li>4x Steel Leaf Champion</li>
+                                <li>4x Ghalta, Primal Hunger</li>
+                                <li>... и другие</li>
+                            </ul>
+                        </div>
+                        <div class="advice">
+                            <h4>Советы по игре:</h4>
+                            <p>Эта колода стремится быстро выкладывать больших существ. Старайтесь играть Llanowar Elves в первый ход, чтобы ускорить свою игру.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Колода 2 -->
+                <div class="deck">
+                    <div class="deck-image">
+                        <img src="images/i (3).webp" alt="Моно-красная Агрессия">
+                    </div>
+                    <div class="deck-content">
+                        <h3>Моно-красная Агрессия</h3>
+                        <p>Быстрая колода, которая атакует с первых ходов.</p>
+                        <div class="deck-actions">
+                            <button class="show-deck">Показать деклист</button>
+                            <button class="order-btn">Заказать колоду</button>
+                        </div>
+                        <div class="deck-list">
+                            <h4>Основная колода (60 карт):</h4>
+                            <ul>
+                                <li>4x Monastery Swiftspear</li>
+                                <li>4x Soul-Scar Mage</li>
+                                <li>4x Lightning Bolt</li>
+                                <li>4x Goblin Chainwhirler</li>
+                                <li>... и другие</li>
+                            </ul>
+                        </div>
+                        <div class="advice">
+                            <h4>Советы по игре:</h4>
+                            <p>Атакуйте каждый ход! Эта колода побеждает быстро, до того как противник сможет разыграть своих больших существ.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Колода 3 -->
+                <div class="deck">
+                    <div class="deck-image">
+                        <img src="images/i (4).webp" alt= "Бело-синий Контроль">
+                    </div>
+                    <div class="deck-content">
+                        <h3>Бело-синий Контроль</h3>
+                        <p>Колода для тех, кто любит контролировать игру.</p>
+                        <div class="deck-actions">
+                            <button class="show-deck">Показать деклист</button>
+                            <button class="order-btn">Заказать колоду</button>
+                        </div>
+                        <div class="deck-list">
+                            <h4>Основная колода (60 карт):</h4>
+                            <ul>
+                                <li>4x Counterspell</li>
+                                <li>4x Swords to Plowshares</li>
+                                <li>3x Wrath of God</li>
+                                <li>2x Teferi, Hero of Dominaria</li>
+                                <li>... и другие</li>
+                            </ul>
+                        </div>
+                        <div class="advice">
+                            <h4>Советы по игре:</h4>
+                            <p>Сохраняйте контрспеллы для ключевых карт противника. Не спешите, ваша сила в поздней игре.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Страница правил -->
+        <div id="rules" class="page">
+            <h1>Основные правила Magic: The Gathering</h1>
+            
+            <div class="rules-content">
+                <div class="rules-section">
+                    <h3>Структура игры</h3>
+                    <p>MTG - это карточная игра для двух или более игроков, где каждый играет своей колодой. Основная цель игры - уменьшить количество жизней оппонента до 0.</p>
+                </div>
+                
+                <div class="rules-section">
+                    <h3>Типы карт</h3>
+                    <ul>
+                        <li><strong>Существа</strong> - атакуют и защищают</li>
+                        <li><strong>Заклинания</strong> - одноразовые эффекты</li>
+                        <li><strong>Мгновенные заклинания</strong> - могут играться в любой момент</li>
+                        <li><strong>Чары</strong> - остаются на поле и дают постоянные эффекты</li>
+                        <li><strong>Артефакты</strong> - похожи на чары, но могут быть и существами</li>
+                        <li><strong>Земли</strong> - дают ману для розыгрыша карт</li>
+                    </ul>
+                </div>
+                
+                <div class="rules-section">
+                    <h3>Ход игры</h3>
+                    <p>Каждый ход состоит из следующих фаз:</p>
+                    <ol>
+                        <li><strong>Начало хода</strong> - пробуждение существ, снятие повреждений</li>
+                        <li><strong>Основная фаза</strong> - розыгрыш земли, существ и других карт</li>
+                        <li><strong>Боевая фаза</strong> - атака существ</li>
+                        <li><strong>Вторая основная фаза</strong> - дополнительные действия</li>
+                        <li><strong>Конец хода</strong> - сброс карт если у вас больше 7 в руке</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Модальное окно заказа -->
+    <div id="order-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <h2>Оформление заказа</h2>
+            <form id="order-form">
+                <div class="form-group">
+                    <label for="name">Ваше имя:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="deck">Выбранная колода:</label>
+                    <input type="text" id="deck" name="deck" readonly>
+                </div>
+                <div class="form-group">
+                    <label for="address">Адрес доставки:</label>
+                    <textarea id="address" name="address" required></textarea>
+                </div>
+                <button type="submit" class="submit-btn">Подтвердить заказ</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
